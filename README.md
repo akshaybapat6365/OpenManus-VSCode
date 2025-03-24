@@ -1,6 +1,6 @@
 # OpenManus VS Code Extension
 
-[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://github.com/akshaybapat/OpenManus-VSCode/releases/latest)
+[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://github.com/akshaybapat6365/OpenManus-VSCode/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A VS Code extension that integrates OpenManus AI tools with your development environment, providing task management and checkpoint capabilities to streamline your workflow.
@@ -16,11 +16,11 @@ A VS Code extension that integrates OpenManus AI tools with your development env
 
 ### Option 1: Direct Download
 
-Download the VSIX file directly from the repository: [OpenManus VSCode Extension v0.1.0](https://github.com/akshaybapat/OpenManus-VSCode/raw/main/releases/openmanus-vscode-0.1.0.vsix)
+Download the VSIX file directly from the repository: [OpenManus VSCode Extension v0.1.0](https://github.com/akshaybapat6365/OpenManus-VSCode/raw/main/releases/openmanus-vscode-0.1.0.vsix)
 
 ### Option 2: Manual Installation
 
-1. Download the `.vsix` file from the [GitHub repository](https://github.com/akshaybapat/OpenManus-VSCode/raw/main/releases/openmanus-vscode-0.1.0.vsix)
+1. Download the `.vsix` file from the [GitHub repository](https://github.com/akshaybapat6365/OpenManus-VSCode/raw/main/releases/openmanus-vscode-0.1.0.vsix)
 2. Open VS Code
 3. Go to Extensions view (Ctrl+Shift+X / Cmd+Shift+X)
 4. Click on the "..." menu at the top of the Extensions view
