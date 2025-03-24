@@ -16,11 +16,11 @@ A VS Code extension that integrates OpenManus AI tools with your development env
 
 ### Option 1: Direct Download
 
-Download the VSIX file directly from the [GitHub Releases page](https://github.com/akshaybapat/OpenManus-VSCode/releases/latest/download/openmanus-vscode-0.1.0.vsix).
+Download the VSIX file directly from the repository: [OpenManus VSCode Extension v0.1.0](https://github.com/akshaybapat/OpenManus-VSCode/raw/main/releases/openmanus-vscode-0.1.0.vsix)
 
 ### Option 2: Manual Installation
 
-1. Download the `.vsix` file from the [Releases page](https://github.com/akshaybapat/OpenManus-VSCode/releases)
+1. Download the `.vsix` file from the [GitHub repository](https://github.com/akshaybapat/OpenManus-VSCode/raw/main/releases/openmanus-vscode-0.1.0.vsix)
 2. Open VS Code
 3. Go to Extensions view (Ctrl+Shift+X / Cmd+Shift+X)
 4. Click on the "..." menu at the top of the Extensions view
