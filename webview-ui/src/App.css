@@ -1,0 +1,18 @@
+.taskmanager-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-message {
+  word-break: break-word;
+  max-width: 80%;
+}
+
+.task-card {
+  transition: background-color 0.2s;
+}
+
+.task-card:hover {
+  background-color: rgba(55, 65, 81, 1);
+} 

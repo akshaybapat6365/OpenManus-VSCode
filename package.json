@@ -1,0 +1,126 @@
+{
+  "name": "openmanus-vscode",
+  "displayName": "OpenManus VS Code",
+  "description": "OpenManus integration for VS Code with Task-Master-AI",
+  "version": "0.1.0",
+  "publisher": "openmanus",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "type": "commonjs",
+  "categories": [
+    "Other",
+    "Machine Learning",
+    "Snippets"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "openManus.openPanel",
+        "title": "OpenManus: Open Panel"
+      },
+      {
+        "command": "openManus.newTask",
+        "title": "OpenManus: Create New Task"
+      },
+      {
+        "command": "openManus.generateTasks",
+        "title": "OpenManus: Generate Tasks from PRD"
+      },
+      {
+        "command": "openManus.nextTask",
+        "title": "OpenManus: Get Next Task"
+      },
+      {
+        "command": "openManus.analyzeComplexity",
+        "title": "OpenManus: Analyze Task Complexity"
+      },
+      {
+        "command": "openManus.createCheckpoint",
+        "title": "OpenManus: Create Workspace Checkpoint"
+      },
+      {
+        "command": "openManus.listCheckpoints",
+        "title": "OpenManus: List Workspace Checkpoints"
+      },
+      {
+        "command": "openManus.restoreCheckpoint",
+        "title": "OpenManus: Restore Workspace Checkpoint"
+      }
+    ],
+    "configuration": {
+      "title": "OpenManus",
+      "properties": {
+        "openManus.pythonPath": {
+          "type": "string",
+          "default": "",
+          "description": "Path to Python executable for OpenManus"
+        },
+        "openManus.openManusPath": {
+          "type": "string",
+          "default": "",
+          "description": "Path to OpenManus installation"
+        },
+        "openManus.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "API key for LLM service"
+        },
+        "openManus.taskMaster.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable Task-Master-AI integration"
+        },
+        "openManus.model": {
+          "type": "string",
+          "default": "claude-3-7-sonnet-20250219",
+          "description": "Model to use for LLM service"
+        },
+        "openManus.checkpoints.location": {
+          "type": "string",
+          "default": "",
+          "description": "Location to store workspace checkpoints"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "webpack --mode production --devtool hidden-source-map --config webpack.config.cjs",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "build:webview": "cd webview-ui && npm run build",
+    "watch:webview": "cd webview-ui && npm run watch",
+    "precompile": "npm run build:webview",
+    "prepackage": "npm run build:webview"
+  },
+  "dependencies": {
+    "@types/ws": "^8.18.0",
+    "task-master-ai": "^0.9.16",
+    "ws": "^8.18.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.80.0",
+    "@vscode/vsce": "^2.19.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.1.3",
+    "webpack": "^5.85.0",
+    "webpack-cli": "^5.1.1"
+  },
+  "keywords": [
+    "openmanus",
+    "ai",
+    "task-management",
+    "llm",
+    "claude"
+  ],
+  "author": "",
+  "license": "MIT"
+}
